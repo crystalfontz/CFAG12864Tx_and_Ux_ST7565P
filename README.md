@@ -3,13 +3,19 @@
 Example Seeeduino (Arduino clone) code for the Crystalfontz CFAG12864T and CFAG12864U family of displays. These displays come in relfective and transflective models, are extremely low power, and slim designs. They also come with optional carrier boards and development kits for quick product evaluation. Full part numbers and links to the products can be found below.
 
 Displays without carrier boards can be found here:
+
 [CFAG12864T3-TFH](https://www.crystalfontz.com/product/cfag12864t3tfh) - 1.3" transflective
+
 [CFAG12864T3-NFH](https://www.crystalfontz.com/product/cfag12864t3nfh) - 1.3" reflective
+
 [CFAG12864U3-TFH](https://www.crystalfontz.com/product/cfag12864u3tfh) - 2.4" transflective
+
 [CFAG12864U3-NFH](https://www.crystalfontz.com/product/cfag12864u3nfh) - 2.4" reflective
   
 Kits for these products can be found here:  
+
 [CFAF240320A0-024SC-A1-2](https://www.crystalfontz.com/product/cfaf240320a0024sca12)
+
 [CFAF240320A0-024SN-A1-2](https://www.crystalfontz.com/product/cfaf240320a0024sna12)
 
 ## Connection Details
