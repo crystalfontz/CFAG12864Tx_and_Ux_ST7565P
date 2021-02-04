@@ -1,0 +1,6 @@
+{
+    "programmer": "AVR ISP",
+    "board": "arduino:avr:uno",
+    "port": "COM6",
+    "sketch": "CFAG12864T3U3.ino"
+}
