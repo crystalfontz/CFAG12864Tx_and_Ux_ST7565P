@@ -165,7 +165,7 @@ void Set_Static_Indicators(uint16_t state_mask)
     if(mask&state_mask)
       {
       //Set indicator to on.
-      SPI_sendData(0xFF);
+      SPI_sendData(0xff);
       }
    else      
       {

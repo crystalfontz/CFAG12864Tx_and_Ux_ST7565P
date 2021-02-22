@@ -38,7 +38,7 @@
 #define CFAG12864U3 (1)
 
 // Define the display type.
-#define display_type CFAG12864T3
+#define display_type CFAG12864U3
 
 #define HRES 128
 #define VRES 64

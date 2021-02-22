@@ -573,14 +573,20 @@ void setup(void)
   ylogocrawldir = 0;
 }
 //============================================================================
+// Set up demos
+#define logodemo 1
+
 void loop(void)
 {
   Serial.println(F("loop()"));
-  Set_Static_Indicators("0xFFFF0000");
+  Set_Static_Indicators("0xffff0000");
   logo_to_framebuffer();
-
+#if logodemo
   Send_Framebuffer_To_Display();
   delay(2000);
+#endif
+while(1);
+
   logo_crawl_demo();
   delay(500);
   Rectangle_Demo();

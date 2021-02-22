@@ -162,7 +162,7 @@ void logo_to_framebuffer(void)
           coordinate = column + ((page * 8) + j)*HRES / 8;
           Serial.println(coordinate);
           // Read the byte
-          theByte = pgm_read_byte(&TFH_Mono_1BPP[coordinate]);
+          theByte = pgm_read_byte(&NFH_Mono_1BPP[coordinate]);
           // Determine which bit we need to keep and put it in the correct spot
           pixels |= (((theByte << i) & 0x80) >> (7 - j));
         }
