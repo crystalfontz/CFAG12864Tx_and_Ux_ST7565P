@@ -4,33 +4,47 @@ Example Seeeduino (Arduino clone) code for the Crystalfontz CFAG12864T and CFAG1
 
 Displays without carrier boards can be found here:
 
-[CFAG12864T3-TFH](https://www.crystalfontz.com/product/cfag12864t3tfh) - 1.3" transflective
+[CFAG12864T3-TFH](https://www.crystalfontz.com/product/cfag12864t3tfh) - 1.1" transflective
 
-[CFAG12864T3-NFH](https://www.crystalfontz.com/product/cfag12864t3nfh) - 1.3" reflective
+[CFAG12864T3-NFH](https://www.crystalfontz.com/product/cfag12864t3nfh) - 1.1" reflective
 
-[CFAG12864U3-TFH](https://www.crystalfontz.com/product/cfag12864u3tfh) - 2.4" transflective
+[CFAG12864U3-TFH](https://www.crystalfontz.com/product/cfag12864u3tfh) - 2.2" transflective
 
-[CFAG12864U3-NFH](https://www.crystalfontz.com/product/cfag12864u3nfh) - 2.4" reflective
+[CFAG12864U3-NFH](https://www.crystalfontz.com/product/cfag12864u3nfh) - 2.2" reflective
   
 Kits for these products can be found here:  
 
-[CFAF240320A0-024SC-A1-2](https://www.crystalfontz.com/product/cfaf240320a0024sca12)
+[Low Power Transflective Graphic LCD Module (CFAG12864T3-NFH-E1-1)](https://www.crystalfontz.com/product/cfag12864t3nfhe11)
 
-[CFAF240320A0-024SN-A1-2](https://www.crystalfontz.com/product/cfaf240320a0024sna12)
+[Low Power Transflective LCD Dev Kit (CFAG12864T3-NFH-E1-2)](https://www.crystalfontz.com/product/cfag12864t3nfhe12)
+
+[128x64 Backlit Transflective LCD with Breakout Board (CFAG12864T3-TFH-E1-1)](https://www.crystalfontz.com/product/cfag12864t3tfhe11)
+
+[Small Backlit Monochrome LCD Dev Kit (CFAG12864T3-TFH-E1-2)](https://www.crystalfontz.com/product/cfag12864t3tfhe12)
+
+[Low Power Transflective LCD Display Module (CFAG12864U3-NFH-E1-1)](https://www.crystalfontz.com/product/cfag12864u3nfhe11)
+
+[Low Power Monochrome LCD Dev Kit (CFAG12864U3-NFH-E1-2)](https://www.crystalfontz.com/product/cfag12864u3nfhe12)
+
+[128x64 Monochrome Transflective Backlit LCD Module (CFAG12864U3-TFH-E1-1)](https://www.crystalfontz.com/product/cfag12864u3tfhe11)
+
+[128x64 Transflective Backlit LCD Development Kit (CFAG12864U3-TFH-E1-2)](https://www.crystalfontz.com/product/cfag12864u3tfhe12)
+
+Edit LCD_low.h to reflect the appropriate base display (either CFAG12864T3 or CFAG12864U3) for the correct initialization
 
 ## Connection Details
-#### To CFA10098 Adapter Board (See kits above)
+#### To CFA10110 Adapter Board (See kits above)
 ##### SPI Configuration
 | 10110 Pin         | Seeeduino Pin | Connection Description            
 |-------------------|---------------|-----------------------------------
 | 1  GND            | GND           | Ground
 | 2  3v3            | 3v3           | Voltage in
 | 3  RES            | D9            | Reset pin
-| 4  DNC            | no connect    | Do not connect
+| 4  DNC            | DNC           | Do not connect
 | 5  DC (RS)        | D8            | Data or Command Register Select
 | 6  CS             | D10           | Chip Select
 | 7  RD/E           | DNC           | Read (8080) or Enable (6800)
-| 8  WR/RW          | DNC           | Write (9090) or Read/Write (6800)
+| 8  WR/RW          | DNC           | Write (8080) or Read/Write (6800)
 | 9  D0             | DNC           | Data pin 0
 | 10 D1             | DNC           | Data pin 1
 | 11 D2             | DNC           | Data pin 2
@@ -54,7 +68,7 @@ This code currently only demonstrates using the SPI interface.
 | 4  CS               | D10           | Chip Select
 | 5  RES              | D9            | Reset pin
 | 6  DC (RS)          | D8            | Data or Command Register Select
-| 7  WR/RW            | DNC           | Write (9090) or Read/Write (6800)
+| 7  WR/RW            | DNC           | Write (8080) or Read/Write (6800)
 | 8  RD/E             | DNC           | Read (8080) or Enable (6800)
 | 9  D0               | DNC           | Data pin 0
 | 10 D1               | DNC           | Data pin 1
