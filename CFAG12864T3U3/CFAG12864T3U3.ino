@@ -24,6 +24,8 @@
 //
 // 2017 - 06 - 15 Brent A. Crosby
 // 2019 - 05 - 01 Trevin Jorgenson
+// 2022 - 06 - 20 Kelsey Zaches
+//
 // Crystalfontz America, Inc. http://www.crystalfontz.com
 //===========================================================================
 // This code can also be found on GitHub:
@@ -575,6 +577,11 @@ void setup(void)
 //============================================================================
 // Set up demos
 #define logodemo 1
+#define logocral 0
+#define rectanglesdemo 1
+#define linesdemo 1
+#define circledemo 1
+#define fillFBdemo 1
 
 void loop(void)
 {
@@ -585,10 +592,13 @@ void loop(void)
   Send_Framebuffer_To_Display();
   delay(2000);
 #endif
-while(1);
-
+//while(1);
+#if logocrawl
   logo_crawl_demo();
   delay(500);
+#endif
+
+#if rectanglesdemo
   Rectangle_Demo();
   delay(500);
   Rounded_Rectangle_Demo();
@@ -596,6 +606,9 @@ while(1);
   Filled_Rectangle_Demo();
   Fill_Framebuffer(0x00, 0x00);
   delay(500);
+#endif
+
+#if linesdemo
   Line_Demo_1();
   delay(500);
   Line_Demo_2();
@@ -604,13 +617,19 @@ while(1);
   delay(500);
   Line_Demo_4();
   delay(500);
+#endif
+
+#if circledemo
   Circle_Demo_1();
   delay(500);
+#endif
+
+#if fillFBdemo
+  //Push out a few filled screens
   Fill_Framebuffer(0x00, 0x00);
   Send_Framebuffer_To_Display();
   delay(500);
 
-  //Push out a few filled screens
   //Checkerboard odd
   Fill_Framebuffer(0xAA, 0x55);
   Send_Framebuffer_To_Display();
@@ -643,5 +662,6 @@ while(1);
   Fill_Framebuffer(0x00, 0x00);
   Send_Framebuffer_To_Display();
   delay(500);
+ #endif 
 }
 //============================================================================
