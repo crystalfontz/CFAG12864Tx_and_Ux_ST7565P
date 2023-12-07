@@ -2,7 +2,7 @@
 //
 //  !! IMPORTANT !!
 //
-//  The CFAG12864T3, CFAG12864T4, CFAG12864U3 and CFAG12864U4 are a 3.3v devices. You need a 3.3v
+//  The CFAG12864T3, CFAG12864T4, CFAG12864U3 and CFAG12864U4 are 3.3v devices. You need a 3.3v
 //  Arduino to operate this code properly. We used a Seeedunio set
 //  to 3.3v.
 //
