@@ -2,24 +2,30 @@
 //
 //  !! IMPORTANT !!
 //
-//  The CFAG12864T3 and CFAG12864U3 are a 3.3v devices. You need a 3.3v
-//  Arduino to operate this code properly. We used a seeedunio v4.2 set
-//  to 3.3v:
+//  The CFAG12864T3, CFAG12864T4, CFAG12864U3 and CFAG12864U4 are a 3.3v devices. You need a 3.3v
+//  Arduino to operate this code properly. We used a Seeedunio set
+//  to 3.3v.
 //
-//  http://www.seeedstudio.com/item_detail.html?p_id=2517
+//  Seeeduino, an open-source 3.3v capable Arduino clone.
+//  https://www.crystalfontz.com/product/cfapn15062-seeeduino-arduino-clone-microprocessor
+//  https://github.com/SeeedDocument/SeeeduinoV4/raw/master/resources/Seeeduino_v4.2_sch.pdf
 //
 //===========================================================================
 //
-// Code written for Seeeduino v4.2 runnung at 3.3v
+// Code written for Seeeduino runnung at 3.3v
 //
-// CFAG12864T3 CFAG12864U3 128x64 LCD in SPI mode
+// CFAG12864Tx CFAG12864Ux 128x64 LCD in SPI mode
 //
 //  ref: https://www.crystalfontz.com/product/CFAG12864T3
 //
-//    Small, backlit:      https://www.crystalfontz.com/product/cfag12864t3tfh
-//    Small, no backlight: https://www.crystalfontz.com/product/cfag12864t3nfh
-//    Large, backlit:      https://www.crystalfontz.com/product/cfag12864u3tfh
-//    Large, no backlight: https://www.crystalfontz.com/product/cfag12864u3nfh
+//    Small, backlit:         https://www.crystalfontz.com/product/cfag12864t3tfh
+//    Small, no backlight:    https://www.crystalfontz.com/product/cfag12864t3nfh
+//    Small, no backlight,
+//    transmissive polarizer: https://www.crystalfontz.com/product/cfag12864t4nfi
+//    Large, backlit:         https://www.crystalfontz.com/product/cfag12864u3tfh
+//    Large, no backlight:    https://www.crystalfontz.com/product/cfag12864u3nfh
+//    Large, no backlight,
+//    transmissive polarizer: https://www.crystalfontz.com/product/cfag12864u4nfi
 //
 //
 // 2017 - 06 - 15 Brent A. Crosby
