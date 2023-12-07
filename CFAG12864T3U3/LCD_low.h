@@ -37,7 +37,7 @@
 #define CFAG12864T3 (0)
 #define CFAG12864U3 (1)
 
-// Define the display type.
+// Define the display type. For the CFAG12864T4 and CFAG12864U4, please specify the display type as CFAG12864T3 and CFAG12864U3 respectively.
 #define display_type CFAG12864U3
 
 #define HRES 128
