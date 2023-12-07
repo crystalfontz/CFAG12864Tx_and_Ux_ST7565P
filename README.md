@@ -1,6 +1,6 @@
-# CFAG12864U3 and CFAG12864T3 family of displays
+# CFAG12864Ux and CFAG12864Tx family of displays
 
-Example Seeeduino (Arduino clone) code for the Crystalfontz CFAG12864T and CFAG12864U family of displays. These displays come in relfective and transflective models, are extremely low power, and slim designs. They also come with optional carrier boards and development kits for quick product evaluation. Full part numbers and links to the products can be found below.
+Example Seeeduino (Arduino clone) code for the Crystalfontz CFAG12864T and CFAG12864U family of displays. These displays come in relfective and transflective models, are extremely low power, and have slim designs. They also come with optional carrier boards and development kits for quick product evaluation. Full part numbers and links to the products can be found below.
 
 Displays without carrier boards can be found here:
 
@@ -8,9 +8,13 @@ Displays without carrier boards can be found here:
 
 [CFAG12864T3-NFH](https://www.crystalfontz.com/product/cfag12864t3nfh) - 1.1" reflective
 
+[CFAG12864T4-NFI](https://www.crystalfontz.com/product/cfag12864t4nfi) - 1.1" reflective with transmissive polarizer
+
 [CFAG12864U3-TFH](https://www.crystalfontz.com/product/cfag12864u3tfh) - 2.2" transflective
 
 [CFAG12864U3-NFH](https://www.crystalfontz.com/product/cfag12864u3nfh) - 2.2" reflective
+
+[CFAG12864U4-NFI](https://www.crystalfontz.com/product/cfag12864u4nfi) - 2.2" reflective with transmissive polarizer
   
 Kits for these products can be found here:  
 
@@ -30,7 +34,7 @@ Kits for these products can be found here:
 
 [128x64 Transflective Backlit LCD Development Kit (CFAG12864U3-TFH-E1-2)](https://www.crystalfontz.com/product/cfag12864u3tfhe12)
 
-Edit LCD_low.h to reflect the appropriate base display (either CFAG12864T3 or CFAG12864U3) for the correct initialization
+Edit LCD_low.h to reflect the appropriate base display (either CFAG12864T3 or CFAG12864U3) for the correct initialization. For use with the CFAG12864T4 and CFAG12864U4, please specify the base display as CFAG12864T3 and CFAG12864U3 respectively. 
 
 ## Connection Details
 #### To CFA10110 Adapter Board (See kits above)
