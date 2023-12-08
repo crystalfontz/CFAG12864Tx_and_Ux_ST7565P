@@ -31,10 +31,11 @@
 // 2017 - 06 - 15 Brent A. Crosby
 // 2019 - 05 - 01 Trevin Jorgenson
 // 2022 - 06 - 20 Kelsey Zaches
+// 2023 - 12 - 08 Khayam Sariffodeen
 //
 // Crystalfontz America, Inc. http://www.crystalfontz.com
 //===========================================================================
-// This code can also be found on GitHub:
+// This code can also be found on GitHub: https://github.com/crystalfontz/CFAG12864Tx_and_Ux_ST7565P
 //
 //===========================================================================
 //  This is free and unencumbered software released into the public domain.
@@ -584,15 +585,15 @@ void setup(void)
 // Set up demos
 #define logodemo 1
 #define logocral 0
-#define rectanglesdemo 1
-#define linesdemo 1
-#define circledemo 1
-#define fillFBdemo 1
+#define rectanglesdemo 0
+#define linesdemo 0
+#define circledemo 0
+#define fillFBdemo 0
 
 void loop(void)
 {
   Serial.println(F("loop()"));
-  Set_Static_Indicators("0xffff0000");
+  Set_Static_Indicators(0xFFFF);
   logo_to_framebuffer();
 #if logodemo
   Send_Framebuffer_To_Display();
