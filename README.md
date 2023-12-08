@@ -34,7 +34,7 @@ Kits for these products can be found here:
 
 [128x64 Transflective Backlit LCD Development Kit (CFAG12864U3-TFH-E1-2)](https://www.crystalfontz.com/product/cfag12864u3tfhe12)
 
-Edit LCD_low.h to reflect the appropriate base display (either CFAG12864T3 or CFAG12864U3) for the correct initialization. For use with the CFAG12864T4 and CFAG12864U4, please specify the base display as CFAG12864T3 and CFAG12864U3 respectively. 
+Edit LCD_low.h to reflect the appropriate base display (either CFAG12864T3, CFAG12864T4, CFAG12864U3 or CFAG12864U4) for the correct initialization. 
 
 ## Connection Details
 #### To CFA10110 Adapter Board (See kits above)
