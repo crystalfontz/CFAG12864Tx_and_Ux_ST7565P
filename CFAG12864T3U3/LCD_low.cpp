@@ -153,7 +153,7 @@ const uint8_t Static_Indicator_Columns[16] PROGMEM =
 void Set_Static_Indicators(uint16_t state_mask)
   {
 //There are no static indicators on the CFAG12864T3
-#if (display_type == CFAG12864U3)    
+#if (display_type == CFAG12864U3) || (display_type == CFAG12864U4)  
   uint16_t
     mask;
   uint8_t
@@ -208,14 +208,34 @@ void Initialize_CFAG12864T2U2(void)
   SPI_sendCommand(35); 
 #endif
 
+#if (display_type == CFAG12864T4)
+  //Set the resistor ratio range (0-7) so that the contrast is near
+  //the middle of its 0-63 range.
+  SPI_sendCommand(NT7534_20_RESISTOR_RATIO_RANGE_SET_BIT | 0x04);
+  //The contrast has a range of 0-63.
+  //For the CFAG12864T4 Contrast of 30 looks pretty good.
+  SPI_sendCommand(NT7534_81_CONTRAST_PREFIX);
+  SPI_sendCommand(30); 
+#endif
+
 #if (display_type == CFAG12864U3)
   //Set the resistor ratio range (0-7) so that the contrast is near
   //the middle of its 0-63 range.
   SPI_sendCommand(NT7534_20_RESISTOR_RATIO_RANGE_SET_BIT | 0x04);
   //The contrast has a range of 0-63.
-  //For the CFAG12864T3 Contrast of 35 looks pretty good.
+  //For the CFAG12864U3 Contrast of 24 looks pretty good.
   SPI_sendCommand(NT7534_81_CONTRAST_PREFIX);
   SPI_sendCommand(24); 
+#endif
+
+#if (display_type == CFAG12864U4)
+  //Set the resistor ratio range (0-7) so that the contrast is near
+  //the middle of its 0-63 range.
+  SPI_sendCommand(NT7534_20_RESISTOR_RATIO_RANGE_SET_BIT | 0x04);
+  //The contrast has a range of 0-63.
+  //For the CFAG12864U4 Contrast of 29 looks pretty good.
+  SPI_sendCommand(NT7534_81_CONTRAST_PREFIX);
+  SPI_sendCommand(29); 
 #endif
 
   SPI_sendCommand(NT7534_28_POWER_CONTROL_SET_BIT | 0x07);
