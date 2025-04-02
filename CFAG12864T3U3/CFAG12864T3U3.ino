@@ -589,6 +589,7 @@ void setup(void)
 #define linesdemo 0
 #define circledemo 0
 #define fillFBdemo 0
+#define contrast_demo 0
 
 void loop(void)
 {
@@ -669,6 +670,14 @@ void loop(void)
   Fill_Framebuffer(0x00, 0x00);
   Send_Framebuffer_To_Display();
   delay(500);
- #endif 
+ #endif
+
+#if contrast_demo
+  for(int i = 0; i < 0x3F; i++)
+  {
+    Set_Contrast(i);
+    delay(500);
+  }
+#endif
 }
 //============================================================================
