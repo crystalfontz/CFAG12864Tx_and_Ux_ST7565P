@@ -54,24 +54,24 @@ Edit `LCD_low.h` to reflect the appropriate base display (either `CFAG12864T3`, 
 | D7/MOSI        | 16        | D11           | Data pin 7 or MOSI pin for SPI    |
 
 #### SPI Configuration (Raspberry Pi)
-| Pin Definition | 10110 Pin | Arduino Pin   | Connection Description            |
-|----------------|-----------|---------------|-----------------------------------|
-| GND            | 1         | GND           | Ground                            |
-| 3V3            | 2         | 3V3           | Voltage in                        |
-| RES            | 3         | 3 (GPIO4)     | Reset pin                         |
-| DNC            | 4         | DNC           | Do not connect                    |
-| DC (RS)        | 5         | 11 (GPIO17)   | Data or Command Register Select   |
-| CS             | 6         | 24 (SPI CE0)  | Chip Select                       |
-| RD/E           | 7         | DNC           | Read (8080) or Enable (6800)      |
-| WR/RW          | 8         | DNC           | Write (8080) or Read/Write (6800) |
-| D0             | 9         | DNC           | Data pin 0                        |
-| D1             | 10        | DNC           | Data pin 1                        |
-| D2             | 11        | DNC           | Data pin 2                        |
-| D3             | 12        | DNC           | Data pin 3                        |
-| D4             | 13        | DNC           | Data pin 4                        |
-| D5             | 14        | DNC           | Data pin 5                        |
-| D6/CLK         | 15        | 19 (SPI MOSI) | Clock pin for SPI                 |
-| D7/MOSI        | 16        | 23 (SPI SCLK) | MOSI pin for SPI                  |
+| Pin Definition | 10110 Pin | Rasperry Pi Pin | Connection Description            |
+|----------------|-----------|-----------------|-----------------------------------|
+| GND            | 1         | GND             | Ground                            |
+| 3V3            | 2         | 3V3             | Voltage in                        |
+| RES            | 3         | 3 (GPIO4)       | Reset pin                         |
+| DNC            | 4         | DNC             | Do not connect                    |
+| DC (RS)        | 5         | 11 (GPIO17)     | Data or Command Register Select   |
+| CS             | 6         | 24 (SPI CE0)    | Chip Select                       |
+| RD/E           | 7         | DNC             | Read (8080) or Enable (6800)      |
+| WR/RW          | 8         | DNC             | Write (8080) or Read/Write (6800) |
+| D0             | 9         | DNC             | Data pin 0                        |
+| D1             | 10        | DNC             | Data pin 1                        |
+| D2             | 11        | DNC             | Data pin 2                        |
+| D3             | 12        | DNC             | Data pin 3                        |
+| D4             | 13        | DNC             | Data pin 4                        |
+| D5             | 14        | DNC             | Data pin 5                        |
+| D6/CLK         | 15        | 19 (SPI MOSI)   | Clock pin for SPI                 |
+| D7/MOSI        | 16        | 23 (SPI SCLK)   | MOSI pin for SPI                  |
 
 #### Parallel Configuration
 This code currently only demonstrates using the SPI interface.
