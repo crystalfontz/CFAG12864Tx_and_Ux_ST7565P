@@ -58,7 +58,7 @@ Edit `LCD_low.h` to reflect the appropriate base display (either `CFAG12864T3`, 
 |----------------|-----------|-----------------|-----------------------------------|
 | GND            | 1         | GND             | Ground                            |
 | 3V3            | 2         | 3V3             | Voltage in                        |
-| RES            | 3         | 3 (GPIO4)       | Reset pin                         |
+| RES            | 3         | 7 (GPIO4)       | Reset pin                         |
 | DNC            | 4         | DNC             | Do not connect                    |
 | DC (RS)        | 5         | 11 (GPIO17)     | Data or Command Register Select   |
 | CS             | 6         | 24 (SPI CE0)    | Chip Select                       |
