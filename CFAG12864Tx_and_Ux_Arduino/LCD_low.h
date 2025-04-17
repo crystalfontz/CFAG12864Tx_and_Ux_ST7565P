@@ -40,7 +40,29 @@
 #define CFAG12864U3 (0)
 #define CFAG12864U4 (1)
 
-#define display_type CFAG12864U4
+//This is for the user to only have to change the number above
+#if (CFAG12864T3 == 1)
+   #define display_type CFAG12864T3
+   #define one
+#endif
+#if (CFAG12864T4 == 1)
+   #define display_type CFAG12864T4
+   #define one
+#endif
+#if (CFAG12864U3 == 1)
+   #define display_type CFAG12864U3
+   #define one
+#endif
+#if (CFAG12864U4 == 1)
+   #define display_type CFAG12864U4
+   #define one
+#endif
+
+//This is to let you know you have not defined a display
+#ifndef one
+    #error "You must define a display type in LCD_low.h line 38 to 41"
+#endif
+//////////////////////////
 //////////////////////////
 
 #define HRES 128
