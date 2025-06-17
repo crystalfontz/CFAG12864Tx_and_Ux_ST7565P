@@ -26,7 +26,7 @@ Full part numbers and links to the products can be found below.
 | [CFAG12864U3-NFH-E1-2](https://www.crystalfontz.com/product/cfag12864u3nfhe12) | Low Power Monochrome LCD Dev Kit 
 | [CFAG12864U3-TFH-E1-1](https://www.crystalfontz.com/product/cfag12864u3tfhe11) | 128x64 Monochrome Transflective Backlit LCD Module 
 | [CFAG12864U3-TFH-E1-2](https://www.crystalfontz.com/product/cfag12864u3tfhe12) | 128x64 Transflective Backlit LCD Development Kit  |
-| [CFAG12864T4-NFI-KIT](https://www.crystalfontz.com/product/cfag12864u4nfikit)  | 2.2" Transparent LCD Development Kit |
+| [CFAG12864U4-NFI-KIT](https://www.crystalfontz.com/product/cfag12864u4nfikit)  | 2.2" Transparent LCD Development Kit |
 
 ## Pre-processor directives
 There are a number of pre-processor directives in the code that allow you to change the display the code is written for. They can also change which tests are run.
