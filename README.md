@@ -72,8 +72,8 @@ Edit `LCD_low.h` to reflect the appropriate base display (either `CFAG12864T3`, 
 | D3             | 12        | DNC             | Data pin 3                        |
 | D4             | 13        | DNC             | Data pin 4                        |
 | D5             | 14        | DNC             | Data pin 5                        |
-| D6/CLK         | 15        | 19 (SPI MOSI)   | Clock pin for SPI                 |
-| D7/MOSI        | 16        | 23 (SPI SCLK)   | MOSI pin for SPI                  |
+| D6/CLK         | 15        | 23 (SPI SCK)    | Clock pin for SPI                 |
+| D7/MOSI        | 16        | 19 (SPI MOSI)   | MOSI pin for SPI                  |
 
 #### Parallel Configuration
 This code currently only demonstrates using the SPI interface.
@@ -85,8 +85,8 @@ This code currently only demonstrates using the SPI interface.
 |---------------------|---------------|-----------------------------------
 | 1  3V3              | 3V3           | Voltage in
 | 2  GND              | GND           | Ground
-| 3  CS               | D10           | Chip Select
-| 4  CS               | D10           | Chip Select
+| 3  CS               | D10           | Chip Select Low
+| 4  CS               | 3v3           | Chip Select High (only need to control one, so tie this high)
 | 5  RES              | D9            | Reset pin
 | 6  DC (RS)          | D8            | Data or Command Register Select
 | 7  WR/RW            | DNC           | Write (8080) or Read/Write (6800)
@@ -106,7 +106,7 @@ This code currently only demonstrates using the SPI interface.
 This code currently only demonstrates using the SPI interface.
 
 ## Build instructions for Raspberry Pi
-- Install and built [WiringPi](https://github.com/WiringPi/WiringPi) from source, following it's documentation
+- Install and build [WiringPi](https://github.com/WiringPi/WiringPi) from source, following its documentation
 - After cloning this repo, build the executable by running this command:
 
   `g++ *.cpp -l wiringPi -o cfag12864u4`

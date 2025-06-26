@@ -1,0 +1,6 @@
+{
+    "port": "COM8",
+    "board": "arduino:avr:uno",
+    "programmer": "avrisp",
+    "sketch": "CFAG12864Tx_and_Ux_Arduino\\CFAG12864Tx_and_Ux_Arduino.ino"
+}

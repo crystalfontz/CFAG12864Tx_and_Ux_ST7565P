@@ -98,7 +98,7 @@ void SPI_sendData(uint8_t data)
 void Set_Address(uint8_t column, uint8_t page)
   {
   //For some reason the Left-most column of the CFAG12864T3/U2 is at 4. Hmmm.
-  //column+=4;
+  column+=4;
   //column = 0;
   //Set column-lower nibble
   SPI_sendCommand(NT7534_00_SET_LOWER_COLUMN_ADDRESS_BIT|(column&0x0F));
@@ -186,8 +186,8 @@ void CFAG12864T2U2_Init(void)
   SPI_sendCommand(NT7534_E2_RESET);
   usleep(10);
   
-  //SPI_sendCommand(NT7534_A1_SEGMENT_REMAP_REVERSE); //set ADC
-  SPI_sendCommand(NT7534_A0_SEGMENT_REMAP_NORMAL); //set ADC
+  SPI_sendCommand(NT7534_A1_SEGMENT_REMAP_REVERSE); //set ADC
+  // SPI_sendCommand(NT7534_A0_SEGMENT_REMAP_NORMAL); //set ADC - use A0 to mirror display
   SPI_sendCommand(NT7534_C0_COM_DIRECTION_NORMAL); //set common scan 
   //SPI_sendCommand(NT7534_C8_COM_DIRECTION_REVERSE); //set reverse scan 
   SPI_sendCommand(NT7534_A2_LCD_BIAS_1_9); //set lcd bias 1/9
